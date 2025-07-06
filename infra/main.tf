@@ -62,7 +62,7 @@ module "alb" {
   dev_proj_1_acm_arn        = module.aws_ceritification_manager.dev_proj_1_acm_arn
   lb_target_group_attachment_port = 5000
 }
-
+/*
 module "hosted_zone" {
   source          = "./hosted-zone"
   domain_name     = var.domain_name
@@ -75,7 +75,7 @@ module "aws_ceritification_manager" {
   domain_name    = var.domain_name
   hosted_zone_id = module.hosted_zone.hosted_zone_id
 }
-
+*/
 module "rds_db_instance" {
   source               = "./rds"
   db_subnet_group_name = "dev_proj_1_rds_subnet_group"
