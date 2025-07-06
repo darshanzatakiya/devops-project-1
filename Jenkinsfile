@@ -13,7 +13,7 @@ pipeline {
                 // Clean workspace before cloning (optional)
                 deleteDir()
 
-                // Clone the Git repository
+                // Clone the Git repository 
                 git branch: 'main',
                     url: 'https://github.com/darshanzatakiya/devops-project-1.git'
 
